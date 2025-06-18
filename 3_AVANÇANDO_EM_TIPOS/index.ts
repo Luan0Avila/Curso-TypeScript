@@ -49,6 +49,21 @@ console.log(greeting("Lady"));
 
 // 6 - Funções anonimas
 setTimeout(function() {
-    const sallary: number = 1000
-    console.log(sallary)
-}, 2000)
+    const sallary: number = 1000;
+
+    console.log(sallary);
+
+}, 2000);
+
+// 6 - Tipos de objetos
+function passCoordinates(coord: {x:number, y:number}) {
+    console.log("X coordenadas: " + coord.x)
+    console.log("Y coordenadas: " + coord.y)
+}
+
+const objCoord = {x: 329, y: 84.2}
+
+passCoordinates(objCoord);
+//passCoordinates(1,1);
+//passCoordinates([1,1]);
+passCoordinates({x:10,y:11})
