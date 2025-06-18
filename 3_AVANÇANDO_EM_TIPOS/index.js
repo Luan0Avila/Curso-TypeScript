@@ -45,3 +45,26 @@ passCoordinates(objCoord);
 //passCoordinates(1,1);
 //passCoordinates([1,1]);
 passCoordinates({ x: 10, y: 11 });
+// 8 - props opcionais
+function showNumber(a, b, c) {
+    console.log("A: " + a);
+    console.log("B: " + b);
+    if (c) {
+        console.log("C: " + c);
+    }
+}
+;
+showNumber(1, 2, 3);
+showNumber(1, 2);
+// showNumber(1);
+// 9 - Validando argumento opcional
+function advencedGreeting(firstName, lastName) {
+    if (lastName !== undefined) {
+        return `Olá ${firstName} ${lastName}, tudo bem?`;
+    }
+    ;
+    return `Olá ${firstName}, tudo bem?`;
+}
+;
+console.log(advencedGreeting("Luan", "Avila"));
+console.log(advencedGreeting("Luna"));
