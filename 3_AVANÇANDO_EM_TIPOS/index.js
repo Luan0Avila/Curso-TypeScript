@@ -68,3 +68,19 @@ function advencedGreeting(firstName, lastName) {
 ;
 console.log(advencedGreeting("Luan", "Avila"));
 console.log(advencedGreeting("Luna"));
+// 10 - union type
+function showBalance(balance) {
+    console.log(`O saldo da conta é R$${balance}`);
+}
+;
+showBalance(1000);
+showBalance("500");
+const arr2 = [1, "teste", false];
+function showUserRole(role) {
+    if (typeof role === "boolean") {
+        return "Usuário não aprovado";
+    }
+    return `A função do usuário é: ${role}`;
+}
+console.log(showUserRole(false));
+console.log(showUserRole("Admin"));
