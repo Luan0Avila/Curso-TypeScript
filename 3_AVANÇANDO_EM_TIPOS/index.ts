@@ -39,3 +39,16 @@ soma(4,5);
 
 // soma("4", 5);
 
+// 5 - retorno de função
+function greeting(name: string): string {
+    //return 5;
+    return `Olá ${name}`;
+};
+
+console.log(greeting("Lady"));
+
+// 6 - Funções anonimas
+setTimeout(function() {
+    const sallary: number = 1000
+    console.log(sallary)
+}, 2000)
