@@ -84,3 +84,51 @@ function showUserRole(role) {
 }
 console.log(showUserRole(false));
 console.log(showUserRole("Admin"));
+function showId(id) {
+    console.log(`O ID é: ${id}`);
+}
+;
+showId(1);
+showId("11");
+showId(123);
+;
+function showCoords(obj) {
+    console.log(`X: ${obj.x} Y: ${obj.y} Z: ${obj.z}`);
+}
+;
+const coordObjs = {
+    x: 11,
+    y: 15,
+    z: 10,
+};
+showCoords(coordObjs);
+const somePerson = { name: "Luan", age: 21 };
+console.log(somePerson);
+//type personType = {
+//age: number
+//}
+// 14 - literal types
+let test;
+//test = 1;
+test = "testando";
+console.log(test);
+function showDirection(direction) {
+    console.log(`A direção é: ${direction}`);
+}
+showDirection("left");
+//showDirection("Top");
+// 15 - non null assertion operators
+const p = document.getElementById("some-p");
+console.log(p.innerText);
+// 16 - bigint
+let n;
+//n = 1
+n = 1000n;
+console.log(n);
+console.log(typeof n);
+console.log(n + 100n);
+// 17 - symbol
+let symbolA = Symbol("a");
+let symbolB = Symbol("a");
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
